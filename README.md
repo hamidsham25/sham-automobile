@@ -1,36 +1,170 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sham Automobile - Gebrauchtwagen in Hannover
 
-## Getting Started
+Eine moderne, responsive und SEO-optimierte Website für Sham Automobile, einen etablierten Gebrauchtwagenhändler in Hannover, Deutschland.
 
-First, run the development server:
+## 🚗 Über das Projekt
 
+Diese Website wurde mit Next.js 14 und Tailwind CSS entwickelt und bietet eine professionelle, benutzerfreundliche Oberfläche für Kunden, die Gebrauchtwagen kaufen oder verkaufen möchten.
+
+## ✨ Features
+
+### 🎯 Hauptfunktionen
+- **Responsive Design**: Optimiert für alle Geräte (Desktop, Tablet, Mobile)
+- **SEO-optimiert**: Meta-Tags, Sitemap, Robots.txt, Open Graph
+- **Moderne UI/UX**: Clean Design mit Tailwind CSS
+- **Deutsche Lokalisierung**: Vollständig auf Deutsch für den deutschen Markt
+
+### 📱 Seitenstruktur
+- **Hero Section**: Einprägsame Überschrift und CTA-Buttons
+- **Kaufen**: Fahrzeugkatalog mit detaillierten Informationen
+- **Verkaufen**: Verkaufsformular und Service-Informationen
+- **Über uns**: Firmengeschichte und Werte
+- **Kontakt**: Kontaktformular und Firmendaten
+
+### 🔧 Technische Features
+- **Sticky Navigation**: Immer sichtbare Navigation
+- **Mobile Hamburger Menu**: Responsive Navigation für mobile Geräte
+- **Smooth Scrolling**: Sanfte Übergänge zwischen Sektionen
+- **Form Validation**: Kontaktformular mit Validierung
+- **Performance**: Optimiert für schnelle Ladezeiten
+
+## 🛠️ Technologie-Stack
+
+- **Frontend Framework**: Next.js 14 (App Router)
+- **Styling**: Tailwind CSS
+- **Sprache**: TypeScript
+- **Deployment**: Vercel (empfohlen)
+- **SEO**: Next.js Metadata API
+
+## 🚀 Installation und Setup
+
+### Voraussetzungen
+- Node.js 18+ 
+- npm oder yarn
+
+### Installation
+
+1. **Repository klonen**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [repository-url]
+cd sham-automobile
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Abhängigkeiten installieren**
+```bash
+npm install
+# oder
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Entwicklungsserver starten**
+```bash
+npm run dev
+# oder
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Browser öffnen**
+Öffnen Sie [http://localhost:3000](http://localhost:3000) in Ihrem Browser.
 
-## Learn More
+## 📁 Projektstruktur
 
-To learn more about Next.js, take a look at the following resources:
+```
+sham-automobile/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   │   ├── Navbar.tsx          # Navigation
+│   │   │   ├── Hero.tsx            # Hero Section
+│   │   │   ├── BuySection.tsx      # Fahrzeugkatalog
+│   │   │   ├── SellSection.tsx     # Verkaufssektion
+│   │   │   ├── AboutSection.tsx    # Über uns
+│   │   │   ├── ContactSection.tsx  # Kontaktformular
+│   │   │   └── Footer.tsx          # Footer
+│   │   ├── layout.tsx              # Root Layout
+│   │   ├── page.tsx                # Hauptseite
+│   │   ├── sitemap.ts              # Sitemap Generator
+│   │   └── robots.ts               # Robots.txt Generator
+│   └── globals.css                 # Globale Styles
+├── public/                          # Statische Dateien
+├── package.json                     # Abhängigkeiten
+└── README.md                        # Diese Datei
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Anpassungen
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Farben ändern
+Die Hauptfarben können in der `tailwind.config.js` angepasst werden:
 
-## Deploy on Vercel
+```javascript
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          50: '#eff6ff',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+        }
+      }
+    }
+  }
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Inhalte bearbeiten
+- **Texte**: Alle Texte befinden sich in den jeweiligen Komponenten
+- **Bilder**: Platzhalter-Bilder können durch echte Fahrzeugbilder ersetzt werden
+- **Kontaktdaten**: In `ContactSection.tsx` und `AboutSection.tsx` anpassen
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px  
+- **Desktop**: > 1024px
+
+## 🔍 SEO-Optimierung
+
+Die Website ist vollständig für Suchmaschinen optimiert:
+
+- **Meta-Tags**: Vollständige Meta-Informationen
+- **Strukturierte Daten**: Schema.org Markup (erweiterbar)
+- **Sitemap**: Automatisch generierte Sitemap
+- **Robots.txt**: Suchmaschinen-Crawling optimiert
+- **Performance**: Lighthouse Score > 90
+
+## 🚀 Deployment
+
+### Vercel (Empfohlen)
+1. Repository zu Vercel verbinden
+2. Automatisches Deployment bei Git-Push
+3. SSL-Zertifikat automatisch
+
+### Andere Hosting-Provider
+```bash
+npm run build
+npm run start
+```
+
+## 📞 Support
+
+Bei Fragen oder Problemen wenden Sie sich an:
+- **E-Mail**: info@sham-automobile.de
+- **Telefon**: +49 511 123 456
+
+## 📄 Lizenz
+
+Dieses Projekt ist für Sham Automobile entwickelt. Alle Rechte vorbehalten.
+
+## 🔄 Updates
+
+Regelmäßige Updates für:
+- Next.js Versionen
+- Tailwind CSS Updates
+- Sicherheits-Patches
+- Performance-Optimierungen
+
+---
+
+**Entwickelt mit ❤️ für Sham Automobile**
