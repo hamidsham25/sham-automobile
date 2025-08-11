@@ -8,7 +8,7 @@ export default function Hero() {
         <img
           src="/hero-backgroundpicture-insignia.jpg"
           alt="Opel Insignia Limousine"
-          className="w-full h-full object-cover object-center opacity-30"
+          className="w-full h-full object-cover object-bottom opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-800/50 to-slate-900/70"></div>
       </div>
