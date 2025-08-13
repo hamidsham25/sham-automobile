@@ -26,7 +26,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="kontakt" className="py-16 bg-slate-800 relative overflow-hidden">
+    <section id="kontakt" className="pt-24 pb-16 bg-slate-800 relative overflow-hidden">
       {/* Subtle background decoration */}
       <div className="absolute inset-0 opacity-3">
         <div className="absolute top-16 left-16 w-80 h-80 bg-slate-700 rounded-full mix-blend-multiply filter blur-3xl"></div>

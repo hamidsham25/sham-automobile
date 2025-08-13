@@ -1,14 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       {/* Cinematic car background image */}
       <div className="absolute inset-0">
-        <img
+        <Image
           src="/hero-backgroundpicture-insignia.jpg"
           alt="Opel Insignia Limousine"
-          className="w-full h-full object-cover object-bottom opacity-30"
+          fill
+          className="object-cover object-bottom opacity-30"
+          priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-800/50 to-slate-900/70"></div>
       </div>
@@ -49,11 +52,11 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
           <Link 
             href="#kaufen"
-            className="group relative px-10 py-4 bg-white text-slate-900 hover:bg-slate-100 font-semibold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            className="inline-block px-10 py-4 bg-white text-slate-900 hover:bg-slate-100 font-semibold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
-            <span className="relative z-10 flex items-center">
+            <span className="flex items-center">
               Fahrzeuge entdecken
-              <svg className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="ml-3 w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </span>
@@ -61,11 +64,11 @@ export default function Hero() {
           
           <Link 
             href="#verkaufen"
-            className="group relative px-10 py-4 bg-transparent border-2 border-white/30 text-white hover:border-white/60 hover:bg-white/5 font-semibold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 backdrop-blur-sm"
+            className="inline-block px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
-            <span className="relative z-10 flex items-center">
+            <span className="flex items-center">
               Fahrzeug verkaufen
-              <svg className="ml-3 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="ml-3 w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </span>

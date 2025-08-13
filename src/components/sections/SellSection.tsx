@@ -1,6 +1,6 @@
 export default function SellSection() {
   return (
-    <section id="verkaufen" className="py-16 bg-slate-50 relative overflow-hidden">
+    <section id="verkaufen" className="pt-24 pb-16 bg-slate-50 relative overflow-hidden">
       {/* Subtle background decoration */}
       <div className="absolute inset-0 opacity-3">
         <div className="absolute top-20 right-20 w-96 h-96 bg-slate-200 rounded-full mix-blend-multiply filter blur-3xl"></div>

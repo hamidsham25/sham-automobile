@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -32,7 +33,7 @@ export default function Navbar() {
               </div>
               <div className="hidden sm:block">
                 <span className="text-2xl font-bold text-slate-900">Sham Automobile</span>
-                <div className="text-slate-600 text-xs font-medium">Premium Gebrauchtwagen</div>
+                <div className="text-slate-600 text-xs font-medium">Ihr Gebrauchtwagen-Händler</div>
               </div>
             </Link>
           </div>
@@ -55,21 +56,21 @@ export default function Navbar() {
                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-slate-900 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
               </Link>
               <Link 
-                href="#verkaufen" 
+                href="/verkaufen" 
                 className="group relative px-4 py-2 text-slate-700 hover:text-slate-900 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50"
               >
                 Verkaufen
                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-slate-900 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
               </Link>
               <Link 
-                href="#uber-uns" 
+                href="/ueber-uns" 
                 className="group relative px-4 py-2 text-slate-700 hover:text-slate-900 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50"
               >
                 Über uns
                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-slate-900 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
               </Link>
               <Link 
-                href="#kontakt" 
+                href="/kontakt" 
                 className="group relative px-4 py-2 text-slate-700 hover:text-slate-900 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50"
               >
                 Kontakt
@@ -81,7 +82,7 @@ export default function Navbar() {
           {/* CTA Button - Desktop */}
           <div className="hidden lg:block">
             <Link 
-              href="#kontakt"
+              href="/kontakt"
               className="inline-block px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <span className="flex items-center">
@@ -140,7 +141,7 @@ export default function Navbar() {
               </span>
             </Link>
             <Link 
-              href="#verkaufen" 
+              href="/verkaufen" 
               className="group block px-4 py-3 text-slate-700 hover:text-slate-900 font-medium transition-all duration-300 rounded-lg hover:bg-slate-50"
               onClick={closeMenu}
             >
@@ -150,7 +151,7 @@ export default function Navbar() {
               </span>
             </Link>
             <Link 
-              href="#uber-uns" 
+              href="/ueber-uns" 
               className="group block px-4 py-3 text-slate-700 hover:text-slate-900 font-medium transition-all duration-300 rounded-lg hover:bg-slate-50"
               onClick={closeMenu}
             >
@@ -160,7 +161,7 @@ export default function Navbar() {
               </span>
             </Link>
             <Link 
-              href="#kontakt" 
+              href="/kontakt" 
               className="group block px-4 py-3 text-slate-700 hover:text-slate-900 font-medium transition-all duration-300 rounded-lg hover:bg-slate-50"
               onClick={closeMenu}
             >
@@ -173,7 +174,7 @@ export default function Navbar() {
             {/* Mobile CTA Button */}
             <div className="pt-4 px-4">
               <Link 
-                href="#kontakt"
+                href="/kontakt"
                 className="inline-block w-full bg-slate-900 hover:bg-slate-800 text-white py-4 px-6 rounded-lg font-semibold text-center transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 onClick={closeMenu}
               >

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+
 
 // Sample car data - in a real app, this would come from an API or database
 const sampleCars = [
@@ -58,7 +58,7 @@ const sampleCars = [
 
 export default function BuySection() {
   return (
-    <section id="kaufen" className="py-16 bg-white relative overflow-hidden">
+    <section id="kaufen" className="pt-24 pb-16 bg-white relative overflow-hidden">
       {/* Subtle background decoration */}
       <div className="absolute top-0 left-0 w-full h-full opacity-3">
         <div className="absolute top-20 left-10 w-96 h-96 bg-slate-100 rounded-full mix-blend-multiply filter blur-3xl"></div>
