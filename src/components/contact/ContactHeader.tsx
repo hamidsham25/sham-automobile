@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function ContactHeader() {
   return (
     <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden min-h-screen">
@@ -19,9 +21,9 @@ export default function ContactHeader() {
           <nav className="flex justify-center mb-8" aria-label="Breadcrumb">
             <ol className="flex items-center space-x-2 text-sm text-slate-300">
               <li>
-                <a href="/" className="hover:text-white transition-colors duration-300">
+                <Link href="/" className="hover:text-white transition-colors duration-300">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="flex items-center">
                 <svg className="w-4 h-4 mx-2 text-slate-400" fill="currentColor" viewBox="0 0 20 20">

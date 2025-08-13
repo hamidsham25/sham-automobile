@@ -45,7 +45,7 @@ export default function SellTestimonials() {
             >
               {/* Quote Icon */}
               <div className="text-4xl text-blue-600 mb-4">
-                "
+                &ldquo;
               </div>
               
               {/* Feedback Text */}

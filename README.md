@@ -1,170 +1,169 @@
-# Sham Automobile - Gebrauchtwagen in Hannover
+# Sham Automobile
 
-Eine moderne, responsive und SEO-optimierte Website für Sham Automobile, einen etablierten Gebrauchtwagenhändler in Hannover, Deutschland.
+A modern, responsive website for Sham Automobile, a German car dealership. Built with Next.js 15, TypeScript, Tailwind CSS, and integrated with Sanity CMS for content management.
 
-## 🚗 Über das Projekt
+## Features
 
-Diese Website wurde mit Next.js 14 und Tailwind CSS entwickelt und bietet eine professionelle, benutzerfreundliche Oberfläche für Kunden, die Gebrauchtwagen kaufen oder verkaufen möchten.
+- **Modern Design**: Clean, professional design optimized for car dealerships
+- **Responsive Layout**: Mobile-first design that works on all devices
+- **Content Management**: Integrated Sanity CMS for managing car inventory
+- **TypeScript**: Full type safety throughout the application
+- **Tailwind CSS**: Utility-first CSS framework for rapid development
+- **SEO Optimized**: Built-in SEO features and structured data
 
-## ✨ Features
+## Tech Stack
 
-### 🎯 Hauptfunktionen
-- **Responsive Design**: Optimiert für alle Geräte (Desktop, Tablet, Mobile)
-- **SEO-optimiert**: Meta-Tags, Sitemap, Robots.txt, Open Graph
-- **Moderne UI/UX**: Clean Design mit Tailwind CSS
-- **Deutsche Lokalisierung**: Vollständig auf Deutsch für den deutschen Markt
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Styling**: Tailwind CSS 4
+- **CMS**: Sanity Studio
+- **Deployment**: Vercel-ready
 
-### 📱 Seitenstruktur
-- **Hero Section**: Einprägsame Überschrift und CTA-Buttons
-- **Kaufen**: Fahrzeugkatalog mit detaillierten Informationen
-- **Verkaufen**: Verkaufsformular und Service-Informationen
-- **Über uns**: Firmengeschichte und Werte
-- **Kontakt**: Kontaktformular und Firmendaten
+## Getting Started
 
-### 🔧 Technische Features
-- **Sticky Navigation**: Immer sichtbare Navigation
-- **Mobile Hamburger Menu**: Responsive Navigation für mobile Geräte
-- **Smooth Scrolling**: Sanfte Übergänge zwischen Sektionen
-- **Form Validation**: Kontaktformular mit Validierung
-- **Performance**: Optimiert für schnelle Ladezeiten
+### Prerequisites
 
-## 🛠️ Technologie-Stack
-
-- **Frontend Framework**: Next.js 14 (App Router)
-- **Styling**: Tailwind CSS
-- **Sprache**: TypeScript
-- **Deployment**: Vercel (empfohlen)
-- **SEO**: Next.js Metadata API
-
-## 🚀 Installation und Setup
-
-### Voraussetzungen
 - Node.js 18+ 
-- npm oder yarn
+- npm or yarn
 
 ### Installation
 
-1. **Repository klonen**
-```bash
-git clone [repository-url]
-cd sham-automobile
-```
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd sham-automobile
+   ```
 
-2. **Abhängigkeiten installieren**
-```bash
-npm install
-# oder
-yarn install
-```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-3. **Entwicklungsserver starten**
+3. Set up environment variables:
+   ```bash
+   cp env.example .env.local
+   ```
+   
+   Edit `.env.local` and add your Sanity configuration:
+   ```env
+   NEXT_PUBLIC_SANITY_PROJECT_ID=ugc97ccx
+   NEXT_PUBLIC_SANITY_DATASET=production
+   SANITY_TOKEN=your-token
+   ```
+
+### Development
+
+#### Start Next.js Development Server
 ```bash
 npm run dev
-# oder
-yarn dev
+```
+The app will be available at `http://localhost:3000`
+
+#### Start Sanity Studio
+```bash
+npm run studio
+```
+The CMS will be available at `http://localhost:3333/studio`
+
+#### Start Both Servers Simultaneously
+```bash
+npm run dev:all
 ```
 
-4. **Browser öffnen**
-Öffnen Sie [http://localhost:3000](http://localhost:3000) in Ihrem Browser.
+### Building for Production
 
-## 📁 Projektstruktur
-
-```
-sham-automobile/
-├── src/
-│   ├── app/
-│   │   ├── components/
-│   │   │   ├── Navbar.tsx          # Navigation
-│   │   │   ├── Hero.tsx            # Hero Section
-│   │   │   ├── BuySection.tsx      # Fahrzeugkatalog
-│   │   │   ├── SellSection.tsx     # Verkaufssektion
-│   │   │   ├── AboutSection.tsx    # Über uns
-│   │   │   ├── ContactSection.tsx  # Kontaktformular
-│   │   │   └── Footer.tsx          # Footer
-│   │   ├── layout.tsx              # Root Layout
-│   │   ├── page.tsx                # Hauptseite
-│   │   ├── sitemap.ts              # Sitemap Generator
-│   │   └── robots.ts               # Robots.txt Generator
-│   └── globals.css                 # Globale Styles
-├── public/                          # Statische Dateien
-├── package.json                     # Abhängigkeiten
-└── README.md                        # Diese Datei
-```
-
-## 🎨 Anpassungen
-
-### Farben ändern
-Die Hauptfarben können in der `tailwind.config.js` angepasst werden:
-
-```javascript
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        primary: {
-          50: '#eff6ff',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-        }
-      }
-    }
-  }
-}
-```
-
-### Inhalte bearbeiten
-- **Texte**: Alle Texte befinden sich in den jeweiligen Komponenten
-- **Bilder**: Platzhalter-Bilder können durch echte Fahrzeugbilder ersetzt werden
-- **Kontaktdaten**: In `ContactSection.tsx` und `AboutSection.tsx` anpassen
-
-## 📱 Responsive Breakpoints
-
-- **Mobile**: < 768px
-- **Tablet**: 768px - 1024px  
-- **Desktop**: > 1024px
-
-## 🔍 SEO-Optimierung
-
-Die Website ist vollständig für Suchmaschinen optimiert:
-
-- **Meta-Tags**: Vollständige Meta-Informationen
-- **Strukturierte Daten**: Schema.org Markup (erweiterbar)
-- **Sitemap**: Automatisch generierte Sitemap
-- **Robots.txt**: Suchmaschinen-Crawling optimiert
-- **Performance**: Lighthouse Score > 90
-
-## 🚀 Deployment
-
-### Vercel (Empfohlen)
-1. Repository zu Vercel verbinden
-2. Automatisches Deployment bei Git-Push
-3. SSL-Zertifikat automatisch
-
-### Andere Hosting-Provider
 ```bash
 npm run build
-npm run start
+npm start
 ```
 
-## 📞 Support
+## Sanity CMS Integration
 
-Bei Fragen oder Problemen wenden Sie sich an:
-- **E-Mail**: info@sham-automobile.de
-- **Telefon**: +49 511 123 456
+**Note:** This project is configured to connect to the client's Sanity project with ID `ugc97ccx` and dataset `production`.
 
-## 📄 Lizenz
+### Project Structure
+```
+sanity/
+├── sanity.config.ts      # Main Sanity configuration
+├── schemas/
+│   ├── car.ts           # Car document schema
+│   └── index.ts         # Schema exports
+├── package.json          # Sanity dependencies
+└── README.md            # CMS documentation
+```
 
-Dieses Projekt ist für Sham Automobile entwickelt. Alle Rechte vorbehalten.
+### Car Schema
 
-## 🔄 Updates
+The CMS includes a comprehensive car schema with the following fields:
 
-Regelmäßige Updates für:
-- Next.js Versionen
-- Tailwind CSS Updates
-- Sicherheits-Patches
-- Performance-Optimierungen
+- **Basic Info**: Title, slug, description
+- **Technical Specs**: Year, mileage, fuel type, transmission, power
+- **Physical Details**: Color, doors, features
+- **Media**: Multiple images with hotspot support, thumbnail
+- **Business Logic**: Price, location, featured status
 
----
+### Adding Cars
 
-**Entwickelt mit ❤️ für Sham Automobile**
+1. Start the Sanity Studio: `npm run studio`
+2. Navigate to `http://localhost:3333/studio`
+3. Click "Create new document" → "Auto"
+4. Fill in the required fields
+5. Save and publish
+
+### Querying Cars
+
+The project includes pre-built queries in `src/lib/sanity.ts`:
+
+- `getAllCarsQuery`: Get all cars
+- `getFeaturedCarsQuery`: Get featured cars for homepage
+- `getCarBySlugQuery`: Get a specific car by slug
+
+## Project Structure
+
+```
+src/
+├── app/                 # Next.js app router
+├── components/          # React components
+│   ├── sections/       # Page sections
+│   ├── layout/         # Layout components
+│   └── ...
+├── lib/                # Utility functions
+│   ├── sanity.ts       # Sanity client
+│   └── sanity-image.ts # Image utilities
+├── types/              # TypeScript type definitions
+└── ...
+```
+
+## Available Scripts
+
+- `npm run dev` - Start Next.js development server
+- `npm run studio` - Start Sanity Studio
+- `npm run dev:all` - Start both servers simultaneously
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## Environment Variables
+
+Create a `.env.local` file with the following variables:
+
+```env
+NEXT_PUBLIC_SANITY_PROJECT_ID=ugc97ccx
+NEXT_PUBLIC_SANITY_DATASET=production
+SANITY_TOKEN=your-token
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Support
+
+For support or questions, please open an issue in the repository.

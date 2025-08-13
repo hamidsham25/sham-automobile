@@ -33,7 +33,7 @@ export default function SellForm({ formData, onSubmit }: SellFormProps) {
     'Mangelhaft'
   ];
 
-  const handleInputChange = (field: keyof SellFormData, value: any) => {
+  const handleInputChange = (field: keyof SellFormData, value: string | number) => {
     setFormState(prev => ({ ...prev, [field]: value }));
     // Clear error when user starts typing
     if (errors[field]) {

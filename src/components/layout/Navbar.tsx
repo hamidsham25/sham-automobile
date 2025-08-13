@@ -49,7 +49,7 @@ export default function Navbar() {
                 <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-slate-900 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
               </Link>
               <Link 
-                href="#kaufen" 
+                href="/kaufen" 
                 className="group relative px-4 py-2 text-slate-700 hover:text-slate-900 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50"
               >
                 Kaufen
@@ -131,7 +131,7 @@ export default function Navbar() {
               </span>
             </Link>
             <Link 
-              href="#kaufen" 
+              href="/kaufen" 
               className="group block px-4 py-3 text-slate-700 hover:text-slate-900 font-medium transition-all duration-300 rounded-lg hover:bg-slate-50"
               onClick={closeMenu}
             >
