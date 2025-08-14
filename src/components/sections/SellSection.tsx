@@ -65,86 +65,60 @@ export default function SellSection() {
             </div>
           </div>
 
-          {/* Right side - CTA and form */}
+          {/* Right side - CTA */}
           <div className="relative">
-            <div className="bg-white border border-slate-200 p-8 rounded-xl shadow-lg">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-semibold text-slate-900 mb-2">
-                  Kostenlos bewerten lassen!
+            <div className="bg-white border border-slate-200 p-12 rounded-xl shadow-lg text-center">
+              <div className="mb-8">
+                <div className="w-20 h-20 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg 
+                    className="w-10 h-10 text-slate-600" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" 
+                    />
+                  </svg>
+                </div>
+                
+                <h3 className="text-2xl font-semibold text-slate-900 mb-4">
+                  Bereit für den Verkauf?
                 </h3>
-                <p className="text-slate-600">
-                  Füllen Sie das Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                
+                <p className="text-slate-600 mb-8 leading-relaxed">
+                  Erfahren Sie mehr über unseren Verkaufsprozess und lassen Sie Ihr Fahrzeug 
+                  kostenlos und unverbindlich bewerten. Wir garantieren faire Preise und 
+                  eine professionelle Abwicklung.
+                </p>
+                
+                <a
+                  href="/verkaufen"
+                  className="inline-flex items-center justify-center w-full bg-slate-900 hover:bg-slate-800 text-white py-4 px-8 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group"
+                >
+                  Jetzt Fahrzeug verkaufen
+                  <svg 
+                    className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round" 
+                      strokeWidth={2} 
+                      d="M17 8l4 4m0 0l-4 4m4-4H3" 
+                    />
+                  </svg>
+                </a>
+                
+                <p className="text-slate-500 text-sm mt-4">
+                  Kostenlose und unverbindliche Bewertung
                 </p>
               </div>
-              
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      className="w-full px-4 py-3 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-500 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-all duration-300"
-                      placeholder="Ihr vollständiger Name"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-2">
-                      Telefon *
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      required
-                      className="w-full px-4 py-3 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-500 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-all duration-300"
-                      placeholder="Ihre Telefonnummer"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
-                    E-Mail
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-3 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-500 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-all duration-300"
-                    placeholder="ihre.email@beispiel.de"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="car-info" className="block text-sm font-medium text-slate-700 mb-2">
-                    Fahrzeugdetails
-                  </label>
-                  <textarea
-                    id="car-info"
-                    name="car-info"
-                    rows={4}
-                    className="w-full px-4 py-3 border border-slate-200 rounded-lg text-slate-900 placeholder-slate-500 focus:ring-2 focus:ring-slate-500 focus:border-slate-500 transition-all duration-300 resize-none"
-                    placeholder="Marke, Modell, Baujahr, Kilometerstand, Ausstattung..."
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-slate-900 hover:bg-slate-800 text-white py-4 px-6 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                >
-                  Kostenlose Bewertung anfordern
-                </button>
-
-                <p className="text-slate-500 text-sm text-center">
-                  * Pflichtfelder. Wir melden uns innerhalb von 24 Stunden bei Ihnen.
-                </p>
-              </form>
             </div>
           </div>
         </div>
