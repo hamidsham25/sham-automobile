@@ -2,9 +2,18 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActive = (path: string) => {
+    if (path === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(path);
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200 shadow-lg">
@@ -34,38 +43,58 @@ export default function Navbar() {
             <div className="flex items-center space-x-1">
               <Link 
                 href="/" 
-                className="group relative px-4 py-2 text-slate-700 hover:text-slate-900 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50"
+                className={`group relative px-4 py-2 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50 ${
+                  isActive('/') ? 'text-slate-900' : 'text-slate-700 hover:text-slate-900'
+                }`}
               >
                 Home
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-slate-900 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
+                <span className={`absolute bottom-0 h-0.5 bg-slate-900 transition-all duration-300 ${
+                  isActive('/') ? 'left-0 w-full' : 'left-1/2 w-0 group-hover:w-full group-hover:left-0'
+                }`}></span>
               </Link>
               <Link 
                 href="/kaufen" 
-                className="group relative px-4 py-2 text-slate-700 hover:text-slate-900 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50"
+                className={`group relative px-4 py-2 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50 ${
+                  isActive('/kaufen') ? 'text-slate-900' : 'text-slate-700 hover:text-slate-900'
+                }`}
               >
                 Kaufen
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-slate-900 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
+                <span className={`absolute bottom-0 h-0.5 bg-slate-900 transition-all duration-300 ${
+                  isActive('/kaufen') ? 'left-0 w-full' : 'left-1/2 w-0 group-hover:w-full group-hover:left-0'
+                }`}></span>
               </Link>
               <Link 
                 href="/verkaufen" 
-                className="group relative px-4 py-2 text-slate-700 hover:text-slate-900 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50"
+                className={`group relative px-4 py-2 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50 ${
+                  isActive('/verkaufen') ? 'text-slate-900' : 'text-slate-700 hover:text-slate-900'
+                }`}
               >
                 Verkaufen
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-slate-900 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
+                <span className={`absolute bottom-0 h-0.5 bg-slate-900 transition-all duration-300 ${
+                  isActive('/verkaufen') ? 'left-0 w-full' : 'left-1/2 w-0 group-hover:w-full group-hover:left-0'
+                }`}></span>
               </Link>
               <Link 
                 href="/ueber-uns" 
-                className="group relative px-4 py-2 text-slate-700 hover:text-slate-900 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50"
+                className={`group relative px-4 py-2 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50 ${
+                  isActive('/ueber-uns') ? 'text-slate-900' : 'text-slate-700 hover:text-slate-900'
+                }`}
               >
                 Über uns
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-slate-900 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
+                <span className={`absolute bottom-0 h-0.5 bg-slate-900 transition-all duration-300 ${
+                  isActive('/ueber-uns') ? 'left-0 w-full' : 'left-1/2 w-0 group-hover:w-full group-hover:left-0'
+                }`}></span>
               </Link>
               <Link 
                 href="/kontakt" 
-                className="group relative px-4 py-2 text-slate-700 hover:text-slate-900 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50"
+                className={`group relative px-4 py-2 font-medium transition-colors duration-300 rounded-lg hover:bg-slate-50 ${
+                  isActive('/kontakt') ? 'text-slate-900' : 'text-slate-700 hover:text-slate-900'
+                }`}
               >
                 Kontakt
-                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-slate-900 group-hover:w-full group-hover:left-0 transition-all duration-300"></span>
+                <span className={`absolute bottom-0 h-0.5 bg-slate-900 transition-all duration-300 ${
+                  isActive('/kontakt') ? 'left-0 w-full' : 'left-1/2 w-0 group-hover:w-full group-hover:left-0'
+                }`}></span>
               </Link>
             </div>
           </div>
@@ -106,35 +135,45 @@ export default function Navbar() {
               <Link 
                 href="/" 
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors duration-200 font-medium"
+                className={`block px-4 py-3 rounded-lg transition-colors duration-200 font-medium ${
+                  isActive('/') ? 'text-slate-900 bg-slate-100' : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
+                }`}
               >
                 Home
               </Link>
               <Link 
                 href="/kaufen" 
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors duration-200 font-medium"
+                className={`block px-4 py-3 rounded-lg transition-colors duration-200 font-medium ${
+                  isActive('/kaufen') ? 'text-slate-900 bg-slate-100' : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
+                }`}
               >
                 Kaufen
               </Link>
               <Link 
                 href="/verkaufen" 
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors duration-200 font-medium"
+                className={`block px-4 py-3 rounded-lg transition-colors duration-200 font-medium ${
+                  isActive('/verkaufen') ? 'text-slate-900 bg-slate-100' : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
+                }`}
               >
                 Verkaufen
               </Link>
               <Link 
                 href="/ueber-uns" 
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors duration-200 font-medium"
+                className={`block px-4 py-3 rounded-lg transition-colors duration-200 font-medium ${
+                  isActive('/ueber-uns') ? 'text-slate-900 bg-slate-100' : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
+                }`}
               >
                 Über uns
               </Link>
               <Link 
                 href="/kontakt" 
                 onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors duration-200 font-medium"
+                className={`block px-4 py-3 rounded-lg transition-colors duration-200 font-medium ${
+                  isActive('/kontakt') ? 'text-slate-900 bg-slate-100' : 'text-slate-700 hover:text-slate-900 hover:bg-slate-50'
+                }`}
               >
                 Kontakt
               </Link>

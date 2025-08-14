@@ -1,6 +1,5 @@
 export { default as SellHeader } from './SellHeader';
 export { default as SellProcess } from './SellProcess';
-export { default as SellForm } from './SellForm';
 export { default as SellAdvantages } from './SellAdvantages';
 export { default as SellTestimonials } from './SellTestimonials';
 export { default as SellContactCTA } from './SellContactCTA';
