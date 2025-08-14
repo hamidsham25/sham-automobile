@@ -1,19 +1,10 @@
 'use client';
 
-import React from 'react';
 import { useState } from 'react';
 import Link from 'next/link';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200 shadow-lg">
@@ -97,93 +88,71 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <div className="lg:hidden">
             <button
-              onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-lg text-slate-700 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-slate-500 transition-all duration-300"
-              aria-expanded="false"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 text-slate-700 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors duration-200"
+              aria-label="Menü öffnen"
             >
-              <span className="sr-only">Hauptmenü öffnen</span>
-              {!isMenuOpen ? (
-                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              ) : (
-                <svg className="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              )}
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
             </button>
           </div>
         </div>
-      </div>
 
-      {/* Mobile Navigation Menu */}
-      {isMenuOpen && (
-        <div className="lg:hidden">
-          <div className="px-4 pt-2 pb-6 space-y-2 bg-white/95 backdrop-blur-xl border-t border-slate-200 shadow-xl">
-            <Link 
-              href="/" 
-              className="group block px-4 py-3 text-slate-700 hover:text-slate-900 font-medium transition-all duration-300 rounded-lg hover:bg-slate-50"
-              onClick={closeMenu}
-            >
-              <span className="flex items-center">
-                Home
-                <span className="ml-auto w-2 h-2 bg-slate-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-              </span>
-            </Link>
-            <Link 
-              href="/kaufen" 
-              className="group block px-4 py-3 text-slate-700 hover:text-slate-900 font-medium transition-all duration-300 rounded-lg hover:bg-slate-50"
-              onClick={closeMenu}
-            >
-              <span className="flex items-center">
-                Kaufen
-                <span className="ml-auto w-2 h-2 bg-slate-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-              </span>
-            </Link>
-            <Link 
-              href="/verkaufen" 
-              className="group block px-4 py-3 text-slate-700 hover:text-slate-900 font-medium transition-all duration-300 rounded-lg hover:bg-slate-50"
-              onClick={closeMenu}
-            >
-              <span className="flex items-center">
-                Verkaufen
-                <span className="ml-auto w-2 h-2 bg-slate-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-              </span>
-            </Link>
-            <Link 
-              href="/ueber-uns" 
-              className="group block px-4 py-3 text-slate-700 hover:text-slate-900 font-medium transition-all duration-300 rounded-lg hover:bg-slate-50"
-              onClick={closeMenu}
-            >
-              <span className="flex items-center">
-                Über uns
-                <span className="ml-auto w-2 h-2 bg-slate-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-              </span>
-            </Link>
-            <Link 
-              href="/kontakt" 
-              className="group block px-4 py-3 text-slate-700 hover:text-slate-900 font-medium transition-all duration-300 rounded-lg hover:bg-slate-50"
-              onClick={closeMenu}
-            >
-              <span className="flex items-center">
-                Kontakt
-                <span className="ml-auto w-2 h-2 bg-slate-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-              </span>
-            </Link>
-            
-            {/* Mobile CTA Button */}
-            <div className="pt-4 px-4">
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="lg:hidden border-t border-slate-200 bg-white/95 backdrop-blur-xl">
+            <div className="px-2 py-4 space-y-2">
               <Link 
-                href="/kontakt"
-                className="inline-block w-full bg-slate-900 hover:bg-slate-800 text-white py-4 px-6 rounded-lg font-semibold text-center transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-                onClick={closeMenu}
+                href="/" 
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors duration-200 font-medium"
               >
-                Termin vereinbaren
+                Home
               </Link>
+              <Link 
+                href="/kaufen" 
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors duration-200 font-medium"
+              >
+                Kaufen
+              </Link>
+              <Link 
+                href="/verkaufen" 
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors duration-200 font-medium"
+              >
+                Verkaufen
+              </Link>
+              <Link 
+                href="/ueber-uns" 
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors duration-200 font-medium"
+              >
+                Über uns
+              </Link>
+              <Link 
+                href="/kontakt" 
+                onClick={() => setIsMenuOpen(false)}
+                className="block px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-lg transition-colors duration-200 font-medium"
+              >
+                Kontakt
+              </Link>
+              
+              {/* Mobile CTA Button */}
+              <div className="pt-4 border-t border-slate-200">
+                <Link 
+                  href="/kontakt"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block w-full text-center px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-lg transition-all duration-300"
+                >
+                  Termin vereinbaren
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </nav>
   );
 }
