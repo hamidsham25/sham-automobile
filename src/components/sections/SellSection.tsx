@@ -58,7 +58,7 @@ export default function SellSection() {
             <div className="bg-white border border-slate-200 p-8 rounded-xl shadow-sm">
               <h4 className="text-xl font-semibold text-slate-900 mb-4">Warum Sham Automobile?</h4>
               <p className="text-slate-600 leading-relaxed">
-                Als etablierter Gebrauchtwagenhändler in Hannover kennen wir den lokalen Markt 
+                Als etablierter Gebrauchtwagenhändler in Langenhagen kennen wir den lokalen Markt 
                 und können Ihnen den besten Preis für Ihr Fahrzeug garantieren. 
                 Über 2000 zufriedene Kunden vertrauen uns bereits.
               </p>

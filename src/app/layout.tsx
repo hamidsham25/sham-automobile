@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sham Automobile - Gebrauchtwagen in Hannover | Kaufen & Verkaufen",
-  description: "Sham Automobile - Ihr vertrauensvoller Partner für Gebrauchtwagen in Hannover. Große Auswahl an qualitätsgeprüften Fahrzeugen. Faire Preise, transparente Beratung und erstklassiger Service seit 2008.",
-  keywords: "Gebrauchtwagen, Hannover, Sham Automobile, Auto kaufen, Auto verkaufen, Gebrauchtwagenhändler, Hannover, Deutschland",
+  title: "Sham Automobile - Gebrauchtwagen in Langenhagen bei Hannover | Kaufen & Verkaufen",
+  description: "Sham Automobile - Ihr vertrauensvoller Partner für Gebrauchtwagen in Langenhagen bei Hannover. Große Auswahl an qualitätsgeprüften Fahrzeugen. Faire Preise, transparente Beratung und erstklassiger Service seit 2008.",
+  keywords: "Gebrauchtwagen, Langenhagen, Hannover, Sham Automobile, Auto kaufen, Auto verkaufen, Gebrauchtwagenhändler, Deutschland",
   authors: [{ name: "Sham Automobile" }],
   creator: "Sham Automobile",
   publisher: "Sham Automobile",
@@ -29,8 +29,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: "Sham Automobile - Gebrauchtwagen in Hannover",
-    description: "Ihr vertrauensvoller Partner für Gebrauchtwagen in Hannover. Große Auswahl, faire Preise, erstklassiger Service.",
+    title: "Sham Automobile - Gebrauchtwagen in Langenhagen bei Hannover",
+    description: "Ihr vertrauensvoller Partner für Gebrauchtwagen in Langenhagen bei Hannover. Große Auswahl, faire Preise, erstklassiger Service.",
     url: 'https://sham-automobile.de',
     siteName: 'Sham Automobile',
     locale: 'de_DE',
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Sham Automobile - Gebrauchtwagen in Hannover",
-    description: "Ihr vertrauensvoller Partner für Gebrauchtwagen in Hannover. Große Auswahl, faire Preise, erstklassiger Service.",
+    title: "Sham Automobile - Gebrauchtwagen in Langenhagen bei Hannover",
+    description: "Ihr vertrauensvoller Partner für Gebrauchtwagen in Langenhagen bei Hannover. Große Auswahl, faire Preise, erstklassiger Service.",
   },
   robots: {
     index: true,

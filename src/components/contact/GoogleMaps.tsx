@@ -6,7 +6,7 @@ export default function GoogleMaps() {
           Unser Standort
         </h2>
         <p className="text-slate-600 text-lg">
-          Besuchen Sie uns in Hannover
+          Besuchen Sie uns in Langenhagen bei Hannover
         </p>
       </div>
 
@@ -14,7 +14,7 @@ export default function GoogleMaps() {
       <div className="relative">
         <div className="w-full h-80 rounded-xl overflow-hidden shadow-lg">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.409790447!2d9.7322!3d52.3759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b0742e8b3b3b3b%3A0x3b3b3b3b3b3b3b3b!2sHannover%2C%20Germany!5e0!3m2!1sde!2sde!4v1234567890&hl=de"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.964232!2d9.7386!3d52.4467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b073e2e2e2e2e2%3A0x2e2e2e2e2e2e2e2e!2sWalsroder+Straße+237,+30855+Langenhagen,+Deutschland!5e0!3m2!1sde!2sde!4v1234567890&hl=de"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -31,7 +31,7 @@ export default function GoogleMaps() {
       {/* Google Maps Button */}
       <div className="mt-6">
         <a 
-          href="https://maps.google.com/?q=Hannover,Deutschland"
+          href="https://maps.google.com/?q=Walsroder+Straße+237,+30855+Langenhagen,+Deutschland"
           target="_blank"
           rel="noopener noreferrer"
           className="w-full inline-flex items-center justify-center px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"

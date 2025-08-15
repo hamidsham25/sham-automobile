@@ -4,14 +4,14 @@ export default function AboutStructuredData() {
     "@type": "Organization",
     "name": "Sham-Automobile",
     "alternateName": "Sham Automobile",
-    "description": "Ihr vertrauensvoller Partner für Qualitäts-Gebrauchtwagen in Hannover. Über 15 Jahre Erfahrung im Automobilhandel.",
+    "description": "Ihr vertrauensvoller Partner für Qualitäts-Gebrauchtwagen in Langenhagen. Über 15 Jahre Erfahrung im Automobilhandel.",
     "url": "https://sham-automobile.com",
     "logo": "https://sham-automobile.com/logo.png",
     "image": "https://sham-automobile.com/hero-backgroundpicture-insignia.jpg",
     "foundingDate": "2009",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Hannover",
+      "addressLocality": "Langenhagen",
       "addressCountry": "DE",
       "addressRegion": "Niedersachsen"
     },

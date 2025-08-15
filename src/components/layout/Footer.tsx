@@ -10,9 +10,9 @@ export default function Footer() {
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Company Info */}
-          <div className="lg:col-span-2">
+          <div>
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-14 h-14 bg-slate-800 border border-slate-700 rounded-xl flex items-center justify-center shadow-sm">
                 <svg 
@@ -29,7 +29,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-slate-300 mb-8 max-w-md leading-relaxed">
-              Ihr vertrauensvoller Partner für Gebrauchtwagen in Hannover. 
+              Ihr vertrauensvoller Partner für Gebrauchtwagen in Langenhagen. 
               Faire Preise, transparente Beratung und erstklassiger Service seit 2008.
             </p>
           </div>
@@ -73,31 +73,23 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Kontakt */}
           <div>
             <h3 className="text-xl font-semibold text-white mb-6">
-              Unsere Services
+              Kontakt
             </h3>
-            <ul className="space-y-3">
-              <li className="flex items-center text-slate-300">
-                <div className="w-2 h-2 bg-slate-400 rounded-full mr-3"></div>
-                Gebrauchtwagenkauf
+            <ul className="space-y-3 text-slate-300">
+              <li className="flex flex-col">
+                <span className="font-semibold">Adresse:</span>
+                <span>Walsroder Straße 237, 30855 Langenhagen</span>
               </li>
-              <li className="flex items-center text-slate-300">
-                <div className="w-2 h-2 bg-slate-400 rounded-full mr-3"></div>
-                Fahrzeugverkauf
+              <li className="flex flex-col">
+                <span className="font-semibold">Telefon:</span>
+                <a href="tel:+491725413020" className="hover:underline">+49 172 5413020</a>
               </li>
-              <li className="flex items-center text-slate-300">
-                <div className="w-2 h-2 bg-slate-400 rounded-full mr-3"></div>
-                Fahrzeugbewertung
-              </li>
-              <li className="flex items-center text-slate-300">
-                <div className="w-2 h-2 bg-slate-400 rounded-full mr-3"></div>
-                Finanzierung
-              </li>
-              <li className="flex items-center text-slate-300">
-                <div className="w-2 h-2 bg-slate-400 rounded-full mr-3"></div>
-                Versicherung
+              <li className="flex flex-col">
+                <span className="font-semibold">E-Mail:</span>
+                <a href="mailto:noorsham@web.de" className="hover:underline">noorsham@web.de</a>
               </li>
             </ul>
           </div>

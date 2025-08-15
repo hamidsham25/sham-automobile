@@ -22,7 +22,7 @@ export default function SellContactCTA() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold mb-2">Telefon</h3>
-            <p className="text-slate-300">+49 511 123 456</p>
+            <p className="text-slate-300">+49 172 5413020</p>
             <p className="text-sm text-slate-400">Mo-Fr: 8:00 - 18:00 Uhr</p>
           </div>
 
@@ -33,7 +33,7 @@ export default function SellContactCTA() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold mb-2">E-Mail</h3>
-            <p className="text-slate-300">info@sham-automobile.de</p>
+            <p className="text-slate-300">noorsham@web.de</p>
             <p className="text-sm text-slate-400">Antwort innerhalb 24h</p>
           </div>
 
@@ -45,15 +45,15 @@ export default function SellContactCTA() {
               </svg>
             </div>
             <h3 className="text-xl font-semibold mb-2">Adresse</h3>
-            <p className="text-slate-300">Musterstraße 123</p>
-            <p className="text-sm text-slate-400">30159 Hannover</p>
+            <p className="text-slate-300">Walsroder Straße 237</p>
+            <p className="text-sm text-slate-400">30855 Langenhagen</p>
           </div>
         </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
           <a 
-            href="tel:+49511123456"
+            href="tel:+491725413020"
             className="inline-block px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             <span className="flex items-center justify-center">
@@ -65,7 +65,7 @@ export default function SellContactCTA() {
           </a>
           
           <a 
-            href="mailto:info@sham-automobile.de"
+            href="mailto:noorsham@web.de"
             className="inline-block px-10 py-4 bg-white hover:bg-slate-100 text-slate-900 font-semibold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             <span className="flex items-center justify-center">

@@ -37,7 +37,7 @@ export default function Hero() {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-white mb-8 leading-tight">
           <span className="block font-bold">Sham Automobile</span>
           <span className="block text-2xl md:text-3xl lg:text-4xl font-light text-slate-300 mt-6">
-            Premium Gebrauchtwagen in Hannover
+            Premium Gebrauchtwagen in Langenhagen
           </span>
         </h1>
         

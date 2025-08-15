@@ -20,7 +20,7 @@ export default function AboutSection() {
             </span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-light">
-            Sham Automobile wurde 2008 in Hannover gegründet und hat sich seitdem zu einem 
+            Sham Automobile wurde 2008 in Langenhagen gegründet und hat sich seitdem zu einem 
             der führenden Gebrauchtwagenhändler in der Region entwickelt.
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function AboutSection() {
                     <span className="text-slate-700 font-semibold text-lg">2008</span>
                   </div>
                   <div>
-                    <h4 className="text-lg font-semibold text-slate-900 mb-2">Gründung in Hannover</h4>
+                    <h4 className="text-lg font-semibold text-slate-900 mb-2">Gründung in Langenhagen</h4>
                     <p className="text-slate-600">Mit der Vision, den Gebrauchtwagenmarkt zu revolutionieren und Kunden einen transparenten, fairen Service zu bieten.</p>
                   </div>
                 </div>
@@ -66,7 +66,7 @@ export default function AboutSection() {
                   </div>
                   <div>
                     <h4 className="text-lg font-semibold text-slate-900 mb-2">Marktführer</h4>
-                    <p className="text-slate-600">Etablierung als einer der führenden Gebrauchtwagenhändler in Hannover mit über 2000 zufriedenen Kunden.</p>
+                    <p className="text-slate-600">Etablierung als einer der führenden Gebrauchtwagenhändler in Langenhagen mit über 2000 zufriedenen Kunden.</p>
                   </div>
                 </div>
               </div>

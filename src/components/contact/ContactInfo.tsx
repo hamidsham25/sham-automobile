@@ -23,12 +23,12 @@ export default function ContactInfo() {
             <h3 className="text-lg font-semibold text-slate-900 mb-2">Adresse</h3>
             <div className="text-slate-600 space-y-1">
               <p className="font-medium">Sham Automobile GmbH</p>
-              <p>Musterstraße 123</p>
-              <p>30159 Hannover</p>
+              <p>Walsroder Straße 237</p>
+              <p>30855 Langenhagen</p>
               <p>Deutschland</p>
             </div>
             <a 
-              href="https://maps.google.com/?q=Hannover,Deutschland"
+              href="https://maps.google.com/?q=Walsroder+Straße+237,+30855+Langenhagen,+Deutschland"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-slate-700 hover:text-slate-900 font-medium mt-3 transition-colors duration-300"
@@ -52,16 +52,10 @@ export default function ContactInfo() {
             <h3 className="text-lg font-semibold text-slate-900 mb-2">Telefon</h3>
             <div className="space-y-2">
               <a 
-                href="tel:+49511123456"
+                href="tel:+491725413020"
                 className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300"
               >
-                +49 511 123 456
-              </a>
-              <a 
-                href="tel:+49511123457"
-                className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300"
-              >
-                +49 511 123 457
+                +49 172 5413020
               </a>
             </div>
             <p className="text-sm text-slate-500 mt-2">
@@ -81,16 +75,10 @@ export default function ContactInfo() {
             <h3 className="text-lg font-semibold text-slate-900 mb-2">E-Mail</h3>
             <div className="space-y-2">
               <a 
-                href="mailto:info@sham-automobile.de"
+                href="mailto:noorsham@web.de"
                 className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300"
               >
-                info@sham-automobile.de
-              </a>
-              <a 
-                href="mailto:verkauf@sham-automobile.de"
-                className="block text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300"
-              >
-                verkauf@sham-automobile.de
+                noorsham@web.de
               </a>
             </div>
             <p className="text-sm text-slate-500 mt-2">
@@ -109,12 +97,12 @@ export default function ContactInfo() {
           <div className="flex-1">
             <h3 className="text-lg font-semibold text-slate-900 mb-2">WhatsApp</h3>
             <a 
-              href="https://wa.me/49511123456"
+              href="https://wa.me/491725413020"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-slate-600 hover:text-slate-900 font-medium transition-colors duration-300"
             >
-              +49 511 123 456
+              +49 172 5413020
             </a>
             <p className="text-sm text-slate-500 mt-2">
               Schnelle Antwort über WhatsApp

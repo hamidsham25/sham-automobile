@@ -157,8 +157,8 @@ export default function ContactSection() {
                     <h4 className="font-semibold text-white mb-1 text-base">Adresse</h4>
                     <p className="text-slate-300 text-sm leading-relaxed">
                       Sham Automobile<br />
-                      Musterstraße 123<br />
-                      30159 Hannover<br />
+                      Walsroder Straße 237<br />
+                      30855 Langenhagen<br />
                       Deutschland
                     </p>
                   </div>
@@ -166,11 +166,8 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-semibold text-white mb-1 text-base">Telefon</h4>
                     <p className="text-slate-300 text-sm leading-relaxed">
-                      <a href="tel:+49511123456" className="hover:text-white transition-colors duration-300 block">
-                        +49 511 123 456
-                      </a>
-                      <a href="tel:+49511123457" className="hover:text-white transition-colors duration-300 block">
-                        +49 511 123 457
+                      <a href="tel:+491725413020" className="hover:text-white transition-colors duration-300 block">
+                        +49 172 5413020
                       </a>
                     </p>
                   </div>
@@ -180,11 +177,8 @@ export default function ContactSection() {
                   <div>
                     <h4 className="font-semibold text-white mb-1 text-base">E-Mail</h4>
                     <p className="text-slate-300 text-sm leading-relaxed">
-                      <a href="mailto:info@sham-automobile.de" className="hover:text-white transition-colors duration-300 block">
-                        info@sham-automobile.de
-                      </a>
-                      <a href="mailto:verkauf@sham-automobile.de" className="hover:text-white transition-colors duration-300 block">
-                        verkauf@sham-automobile.de
+                      <a href="mailto:noorsham@web.de" className="hover:text-white transition-colors duration-300 block">
+                        noorsham@web.de
                       </a>
                     </p>
                   </div>
@@ -206,7 +200,7 @@ export default function ContactSection() {
               <h4 className="text-base font-semibold text-white mb-3 text-center">Unser Standort</h4>
               <div className="w-full h-48 rounded-lg overflow-hidden">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.409790447!2d9.7322!3d52.3759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b0742e8b3b3b3b%3A0x3b3b3b3b3b3b3b3b!2sHannover%2C%20Germany!5e0!3m2!1sen!2sde!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.964232!2d9.7386!3d52.4467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b073e2e2e2e2e2%3A0x2e2e2e2e2e2e2e2e!2sWalsroder+Straße+237,+30855+Langenhagen,+Deutschland!5e0!3m2!1sde!2sde!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -218,7 +212,7 @@ export default function ContactSection() {
                 ></iframe>
               </div>
               <p className="text-slate-300 text-xs text-center mt-2">
-                Hannover, Deutschland - Ihr genauer Standort wird hier angezeigt
+                Langenhagen, Deutschland - Ihr genauer Standort wird hier angezeigt
               </p>
             </div>
           </div>

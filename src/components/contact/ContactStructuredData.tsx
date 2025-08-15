@@ -3,21 +3,22 @@ export default function ContactStructuredData() {
     "@context": "https://schema.org",
     "@type": "AutomotiveBusiness",
     "name": "Sham Automobile GmbH",
-    "description": "Ihr vertrauensvoller Partner für Gebrauchtwagen in Hannover. Wir bieten eine große Auswahl an qualitativ hochwertigen Gebrauchtwagen mit persönlicher Beratung.",
+    "description": "Ihr vertrauensvoller Partner für Gebrauchtwagen in Langenhagen bei Hannover. Wir bieten eine große Auswahl an qualitativ hochwertigen Gebrauchtwagen mit persönlicher Beratung.",
     "url": "https://sham-automobile.com",
-    "telephone": "+49511123456",
-    "email": "info@sham-automobile.de",
+    "telephone": "+49 172 5413020",
+    "email": "noorsham@web.de",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Musterstraße 123",
-      "addressLocality": "Hannover",
-      "postalCode": "30159",
+      "streetAddress": "Walsroder Straße 237",
+      "addressLocality": "Langenhagen",
+      "addressRegion": "NI",
+      "postalCode": "30855",
       "addressCountry": "DE"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 52.3759,
-      "longitude": 9.7322
+      "latitude": 52.4467,
+      "longitude": 9.7386
     },
     "openingHours": [
       "Mo-Fr 09:00-18:00",
@@ -40,16 +41,13 @@ export default function ContactStructuredData() {
     "priceRange": "€€",
     "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
     "currenciesAccepted": "EUR",
-    "areaServed": {
-      "@type": "City",
-      "name": "Hannover"
-    },
+    "areaServed": ["Langenhagen", "Hannover", "Region Hannover"],
     "serviceArea": {
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": 52.3759,
-        "longitude": 9.7322
+        "latitude": 52.4467,
+        "longitude": 9.7386
       },
       "geoRadius": "50000"
     },
@@ -67,7 +65,7 @@ export default function ContactStructuredData() {
       ]
     },
     "sameAs": [
-      "https://maps.google.com/?q=Hannover,Deutschland"
+      "https://maps.google.com/?q=Walsroder+Straße+237,+30855+Langenhagen,+Deutschland"
     ]
   };
 

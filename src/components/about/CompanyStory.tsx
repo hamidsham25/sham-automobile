@@ -20,7 +20,7 @@ export default function CompanyStory() {
               
               <p>
                 Was als kleiner Familienbetrieb begann, hat sich zu einem der vertrauensvollsten 
-                Gebrauchtwagen-Händler in der Region Hannover entwickelt. Unser Erfolg basiert 
+                Gebrauchtwagen-Händler in der Region Langenhagen entwickelt. Unser Erfolg basiert 
                 auf dem Prinzip, dass Qualität und Kundenzufriedenheit an erster Stelle stehen.
               </p>
 

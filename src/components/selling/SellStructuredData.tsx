@@ -3,15 +3,15 @@ export default function SellStructuredData() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Sham-Automobile",
-    "description": "Gebrauchtwagen Händler in Hannover - Auto verkaufen, kaufen und bewerten. Faire Preise und professioneller Service.",
+    "description": "Gebrauchtwagen Händler in Langenhagen - Auto verkaufen, kaufen und bewerten. Faire Preise und professioneller Service.",
     "url": "https://sham-automobile.com",
-    "telephone": "+49511123456",
-    "email": "info@sham-automobile.de",
+    "telephone": "+49 172 5413020",
+    "email": "noorsham@web.de",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Musterstraße 123",
-      "addressLocality": "Hannover",
-      "postalCode": "30159",
+      "streetAddress": "Walsroder Straße 237",
+      "addressLocality": "Langenhagen",
+      "postalCode": "30855",
       "addressCountry": "DE"
     },
     "geo": {
@@ -25,7 +25,7 @@ export default function SellStructuredData() {
     "paymentAccepted": "Cash, Credit Card, Bank Transfer",
     "areaServed": {
       "@type": "City",
-      "name": "Hannover"
+      "name": "Langenhagen"
     },
     "serviceArea": {
       "@type": "GeoCircle",
