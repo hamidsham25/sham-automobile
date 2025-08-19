@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Auto verkaufen - Sham-Automobile',
     description: 'Schnell, fair und sicher – Ihr Auto verkaufen bei Sham-Automobile Hannover.',
-    url: 'https://sham-automobile.com/verkaufen',
+    url: '/images/img3.jpg',
     images: [
       {
-        url: '/hero-backgroundpicture-insignia.jpg',
+        url: '/images/hero-backgroundpicture-insignia.jpg',
         width: 1200,
         height: 630,
         alt: 'Auto verkaufen bei Sham-Automobile'

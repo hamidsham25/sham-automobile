@@ -40,7 +40,7 @@ export default async function BuySection() {
         </div>
 
         {/* Car Grid from Sanity */}
-        <CarGrid cars={cars.slice(0, 6)} emptyLabel="Aktuell sind keine Fahrzeuge verfügbar." />
+        <CarGrid cars={cars.slice(0, 4)} emptyLabel="Aktuell sind keine Fahrzeuge verfügbar." />
 
         {/* Load More Button */}
         <div className="text-center mt-16">

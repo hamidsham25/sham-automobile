@@ -3,6 +3,8 @@ import Link from 'next/link';
 export default function AboutHeader() {
   return (
     <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white overflow-hidden min-h-screen">
+      {/* Background image */}
+      <img src="/images/img1.jpg" alt="Über Uns Hero Background" className="absolute inset-0 w-full h-full object-cover object-center opacity-40 z-0" />
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-96 h-96 bg-slate-700 rounded-full mix-blend-multiply filter blur-3xl"></div>
@@ -41,20 +43,20 @@ export default function AboutHeader() {
           </div>
 
           {/* Main Headline */}
-          <h1 className="text-5xl md:text-6xl font-light text-white mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-light text-white mb-6 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] font-bold">
             <span className="block font-bold">Über Uns</span>
-            <span className="block text-2xl md:text-3xl lg:text-4xl font-light text-slate-300 mt-6">
+            <span className="block text-2xl md:text-3xl lg:text-4xl font-light text-white/90 mt-6 drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
               Sham-Automobile
             </span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-slate-300 max-w-4xl mx-auto mb-8 leading-relaxed font-light">
+          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto mb-8 leading-relaxed font-light drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
             Ihr vertrauensvoller Partner für Qualitäts-Gebrauchtwagen
           </p>
 
           {/* Description */}
-          <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-lg text-white/90 max-w-3xl mx-auto leading-relaxed font-light drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)]">
             Wir Ihr zuverlässiger Ansprechpartner für den Kauf und Verkauf von Gebrauchtwagen. 
             Wir verbinden langjährige Erfahrung mit modernstem Service und fairen Preisen.
           </p>

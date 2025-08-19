@@ -7,7 +7,7 @@ export default function AboutStructuredData() {
     "description": "Ihr vertrauensvoller Partner für Qualitäts-Gebrauchtwagen in Langenhagen. Über 15 Jahre Erfahrung im Automobilhandel.",
     "url": "https://sham-automobile.com",
     "logo": "https://sham-automobile.com/logo.png",
-    "image": "https://sham-automobile.com/hero-backgroundpicture-insignia.jpg",
+    "image": "https://sham-automobile.com/images/hero-backgroundpicture-insignia.jpg",
     "foundingDate": "2009",
     "address": {
       "@type": "PostalAddress",

@@ -5,19 +5,19 @@ const testimonials: Testimonial[] = [
     id: 'testimonial-1',
     name: 'Michael Schmidt',
     feedback: 'Ich war sehr zufrieden mit dem Verkauf meines BMW. Das Angebot war fair und die Abwicklung verlief reibungslos. Innerhalb von 2 Tagen hatte ich das Geld auf dem Konto.',
-    image: '/public/hero-backgroundpicture-insignia.jpg'
+    image: '/images/hero-backgroundpicture-insignia.jpg'
   },
   {
     id: 'testimonial-2',
     name: 'Sarah Müller',
     feedback: 'Sham-Automobile hat mir einen sehr guten Preis für meinen VW Golf geboten. Die Kommunikation war transparent und ich fühlte mich gut beraten. Sehr empfehlenswert!',
-    image: '/public/hero-backgroundpicture-insignia.jpg'
+    image: '/images/hero-backgroundpicture-insignia.jpg'
   },
   {
     id: 'testimonial-3',
     name: 'Thomas Weber',
     feedback: 'Nachdem ich bei anderen Händlern enttäuschende Angebote erhalten hatte, war ich positiv überrascht von Sham-Automobile. Faire Bewertung und schnelle Abwicklung.',
-    image: '/public/hero-backgroundpicture-insignia.jpg'
+    image: '/images/hero-backgroundpicture-insignia.jpg'
   }
 ];
 

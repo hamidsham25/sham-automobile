@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Cinematic car background image */}
       <div className="absolute inset-0">
         <Image
-          src="/hero-backgroundpicture-insignia.jpg"
+          src="/images/hero-backgroundpicture-insignia.jpg"
           alt="Opel Insignia Limousine"
           fill
           className="object-cover object-bottom opacity-30"

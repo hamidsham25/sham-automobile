@@ -3,10 +3,12 @@ import type { Car } from '@/types/car'
 
 export default function CarGrid({ 
   cars, 
-  emptyLabel = 'Keine Fahrzeuge gefunden.' 
+  emptyLabel = 'Keine Fahrzeuge gefunden.',
+  vertical = false
 }: { 
   cars: Car[]; 
-  emptyLabel?: string 
+  emptyLabel?: string,
+  vertical?: boolean
 }) {
   if (!cars?.length) {
     return (
@@ -18,12 +20,12 @@ export default function CarGrid({
 
   return (
     <div 
-      className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-      role="grid"
+      className={vertical ? "flex flex-col gap-4 w-full max-w-3xl mx-auto" : "grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"}
+      role={vertical ? "list" : "grid"}
       aria-label="Fahrzeugliste"
     >
       {cars.map((car) => (
-        <CarCard key={car._id} car={car} />
+        <CarCard key={car._id} car={car} horizontal={vertical} />
       ))}
     </div>
   )

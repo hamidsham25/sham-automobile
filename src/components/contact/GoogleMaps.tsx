@@ -1,18 +1,9 @@
 export default function GoogleMaps() {
   return (
-    <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-8">
-      <div className="text-center mb-6">
-        <h2 className="text-3xl font-bold text-slate-900 mb-3">
-          Unser Standort
-        </h2>
-        <p className="text-slate-600 text-lg">
-          Besuchen Sie uns in Langenhagen bei Hannover
-        </p>
-      </div>
-
+    <>
       {/* Map Container */}
       <div className="relative">
-        <div className="w-full h-80 rounded-xl overflow-hidden shadow-lg">
+        <div className="w-full h-[500px] rounded-xl overflow-hidden shadow-lg">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.964232!2d9.7386!3d52.4467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b073e2e2e2e2e2%3A0x2e2e2e2e2e2e2e2e!2sWalsroder+Straße+237,+30855+Langenhagen,+Deutschland!5e0!3m2!1sde!2sde!4v1234567890&hl=de"
             width="100%"
@@ -29,7 +20,7 @@ export default function GoogleMaps() {
       </div>
 
       {/* Google Maps Button */}
-      <div className="mt-6">
+      <div className="mt-2">
         <a 
           href="https://maps.google.com/?q=Walsroder+Straße+237,+30855+Langenhagen,+Deutschland"
           target="_blank"
@@ -42,6 +33,6 @@ export default function GoogleMaps() {
           In Google Maps öffnen
         </a>
       </div>
-    </div>
+    </>
   );
 }

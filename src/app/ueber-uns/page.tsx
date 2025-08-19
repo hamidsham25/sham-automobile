@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Über Uns - Sham-Automobile',
     description: 'Lernen Sie Sham-Automobile kennen - Ihr Partner für Qualitäts-Gebrauchtwagen',
-    url: 'https://sham-automobile.com/ueber-uns',
+    url: '/images/img1.jpg',
     images: [
       {
-        url: '/hero-backgroundpicture-insignia.jpg',
+        url: '/images/hero-backgroundpicture-insignia.jpg',
         width: 1200,
         height: 630,
         alt: 'Sham-Automobile Team und Firmengebäude'
